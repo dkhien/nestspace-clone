@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.display-flex {
+  display: flex !important;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+}
+:-moz-placeholder {
+  font-family: "Times New Roman", Times, serif;
+}
+::-moz-placeholder {
+  font-family: "Times New Roman", Times, serif;
+}
+:-ms-input-placeholder {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  width: 70%;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px black solid;
+  box-shadow: 2px black spread;
+}
+
+.back-btn-container a {
+  display: block;
+  position: absolute;
+  font-size: larger;
+  border-left: 1px black solid;
+  border-bottom: 1px black solid;
+  padding: 13px;
+  top: 0;
+  right: 0;
+}
+
+.back-btn-container a:hover {
+  cursor: pointer;
+  background-color: #f44336;
+  color: white;
+}
+
+.image {
+  width: 40%;
+  border: 1px black solid;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.login__container {
+  width: 60%;
+  padding: 10%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.signup__container {
+  display: flex;
+  width: 60%;
+  padding: 5% 10%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form {
+  width: 100%;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__title h1 {
+  font-weight: 500;
+}
+
+.form input {
+  height: 50px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: medium;
+}
+
+#login-switch,
+#signup-switch {
+  color: #244651;
+}
+
+#login-switch,
+#signup-switch:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  body,
+  html {
+    height: 100%;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/4cda813f-b5a2-46ec-ac39-4d5851f09bd4/Nestspace-contactimg-03.jpg?format=500w");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    height: 80vh;
+    width: 80vw;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .signup__container {
+    height: 80vh;
+    width: 80vw;
+    padding: 15%;
+  }
+
+  .container h1 {
+    font-size: 2.2rem;
+  }
+  .login__container {
+    width: 100%;
+    padding: 15%;
+  }
+  .form input {
+    height: 65px;
+    font-size: 1.2rem;
+  }
+  .image {
+    display: none;
+  }
+  .switch__button span {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 46.1875em) {
+  body,
+  html {
+    height: 100%;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/4cda813f-b5a2-46ec-ac39-4d5851f09bd4/Nestspace-contactimg-03.jpg?format=500w");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    height: 80vh;
+    width: 80vw;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .signup__container {
+    height: 80vh;
+    width: 80vw;
+    padding: 22% 12%;
+  }
+
+  .container h1 {
+    font-size: 1.8rem;
+  }
+  .login__container {
+    width: 100%;
+    padding: 25% 12%;
+  }
+  .form {
+    flex: 1;
+  }
+  .form input {
+    height: 55px;
+    font-size: 1.1rem;
+  }
+  .image {
+    display: none;
+  }
+  .switch__button span {
+    font-size: 1.1rem;
+  }
+}

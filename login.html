@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <title>Account</title>
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Image -->
+        <div class="image">
+            <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/4cda813f-b5a2-46ec-ac39-4d5851f09bd4/Nestspace-contactimg-03.jpg?format=500w" alt="">
+        </div>
+
+        <!-- Login -->
+        <div class="login__container">
+            <div class="back-btn-container">
+                <a href="index.html" class="back-btn"> <i class="ti-close"></i> </a>
+            </div>
+            <div class="form__title">
+                <h1>Welcome back!</h1>
+            </div>
+            <div class="form">
+                <form action="" id="login-form" autocomplete="off">
+                    <input type="text" name="username" id="username-input" placeholder="Username">
+                    <input type="password" placeholder="Password" name="password" id="password-input">
+                    <input type="submit" id="submit-input" onclick="check()" value="LOG IN">
+                </form>
+            </div>
+            <div class="switch__button">
+                <span>Not a member? <span id="signup-switch">Sign up</span> </span>
+            </div>
+        </div>
+
+        <!-- Signup -->
+        <div class="signup__container hidden">
+            <div class="back-btn-container">
+                <a href="index.html" class="back-btn"> <i class="ti-close"></i> </a>
+            </div>
+            <div class="form__title">
+                <h1>Hi there, create an account!</h1>
+            </div>
+            <div class="form">
+                <form action="" id="signup-form" autocomplete="off">
+                    <input type="email" autocomplete="off" name="email" id="s-email-input" placeholder="Email">
+                    <input type="text" name="username" id="s-username-input" placeholder="Username">
+                    <input type="password" placeholder="Password" id="s-password-input" name="password" id="">
+                    <input type="password" placeholder="Confirm password" id="s-cfpw-input" name="password" id="">
+                    <input type="submit" id="s-submit-input" onclick="store()" value="SIGN UP">
+                </form>
+            </div>
+            <div class="switch__button">
+                <span>Have an account? <span id="login-switch">Log in</span> </span>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="scripts/login.js"></script>
+</body>
+</html>

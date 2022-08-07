@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nest Space</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="header__navbar">
+        <ul class="header__navbar__list">
+          <li class="header__navbar__listitem">
+            <a href="">About</a>
+          </li>
+          <li class="header__navbar__listitem">
+            <a href="">Contact</a>
+          </li>
+          <li class="header__navbar__listitem">
+            <a href="">Portfolio</a>
+          </li>
+          <li class="header__navbar__listitem">
+            <a href="">Impression</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__navbutton--mobile" onclick="displayMobileNavbar()">
+        <i class="ti-menu" id="mobile__navbutton"></i>
+      </div>
+
+      <div class="header__logo">
+        <a href="index.html"
+          ><img
+            src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/630c37df-ea06-45dc-8682-942af66355cc/nestspace+logo+bk.png?format=1500w"
+            alt=""
+          />
+        </a>
+      </div>
+
+      <!-- <div class="header__social">
+            <ul class="header__social__list">
+                <li class="header__social__listitem"><a href=""><i class="ti-facebook"></i></a></li>
+                <li class="header__social__listitem"><a href=""><i class="ti-instagram"></i></a></li>
+            </ul>
+        </div> -->
+
+      <div class="header__login">
+        <div id="login__btn--container">
+          <a href="login.html" class="login__btn">Log In</a>
+        </div>
+        <div id="welcome-back" class="hidden">
+          <span id="welcome-back-text"></span>
+          <span id="logout-btn" onclick="signOut()">Sign out</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="banner">
+      <!-- <div class="banner-img">
+            <img src="./assets/img/banner-img-1.jpg" alt="">
+            <div class="banner-name">
+                <a href="">Free Form | More</a>
+            </div>
+        </div> -->
+
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="false"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="assets/img/slide-img-1.jpg"
+              alt="First slide"
+            />
+            <div class="banner-name">
+              <a href="">Revival House: Echo of the Body</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="assets/img/slide-img-2.jpg"
+              alt="Second slide"
+            />
+            <div class="banner-name">
+              <a href="">Free Form | More</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="assets/img/slide-img-3.jpg"
+              alt="Second slide"
+            />
+            <div class="banner-name">
+              <a href="">Cache | More</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="assets/img/slide-img-4.jpg"
+              alt="Second slide"
+            />
+            <div class="banner-name">
+              <a href="">Jardin del Sol</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="assets/img/slide-img-5.jpg"
+              alt="Second slide"
+            />
+            <div class="banner-name">
+              <a href="">Antipode | More</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="assets/img/slide-img-6.jpg"
+              alt="Third slide"
+            />
+            <div class="banner-name">
+              <a href="">Panorama | More</a>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="content__description">
+        <div class="content__description__title">
+          <h1>Embrace every diversity in life.</h1>
+        </div>
+        <div class="content__description__text">
+          <span
+            >NestSpace Design is a Taipei-based interior studio. With a
+            perspective that no standard answer exists in the design realm, we
+            always try to find a sustainable solution for the environment and
+            clients. We love to hide metaphors in every work that makes us an
+            architectural storyteller throughout each renovation journey, and
+            the cycle keeps happening.</span
+          >
+        </div>
+      </div>
+      <div class="content__project--container">
+        <div class="content__projecttitle--container">
+          <hr class="content__hr" />
+          <div class="content__project--title">Selected Projects</div>
+          <hr class="content__hr" />
+        </div>
+
+        <div class="content__projectcontent--container">
+          <div
+            class="content__projects content__projects--1"
+            data-aos="fade-left"
+          >
+            <div class="project__description">
+              <h1>miǎo miǎo / 1 of 3</h1>
+              <span
+                >Beyond space limitation, away from urban hustle and
+                bustle.</span
+              >
+              <a href="">See More</a>
+            </div>
+            <div class="project__img">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1611994324059-CV2JW5NJVYB3W0QEZ1M9/Nestspace-homeimg-02.jpg?format=750w"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="content__projects content__projects--2"
+            data-aos="fade-right"
+          >
+            <div class="project__description">
+              <h1>Ne_On / 2 of 3</h1>
+              <span
+                >Opening a dialogue of an ideal way of living through pastel
+                hues and a vivid silhouette.</span
+              >
+              <a href="">See More</a>
+            </div>
+            <div class="project__img">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1611994420319-L1Q6JBO99P3X8J37JUK0/Nestspace-homeimg-03.jpg?format=750w"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="content__projects content__projects--3"
+            data-aos="fade-left"
+          >
+            <div class="project__description">
+              <h1>Xross / 3 of 3</h1>
+              <span
+                >A reinterpretation of all essential parts in one's life.</span
+              >
+              <a href="">See More</a>
+            </div>
+            <div class="project__img">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1635591707541-LWSFD1I7SPDCK1MGC6IZ/Nestspace-homeimg-04.jpg?format=750w"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="project--viewall">
+            <a href=""><h2 id="viewall">View All Projects</h2></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/47de786f-016d-4f73-bfea-f1d9d76544af/cover-09.jpg"
+        alt=""
+      />
+      <div class="contact__text">
+        <h1>Tailoring a Next Space</h1>
+        <a href="">Contact Us</a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer__social">
+        <ul class="footer__social__list">
+          <li class="footer__social__listitem"><a href="">About</a></li>
+          <li class="footer__social__listitem"><a href="">Contact</a></li>
+          <li class="footer__social__listitem"><a href="">Portfolio</a></li>
+          <li class="footer__social__listitem"><a href="">Facebook</a></li>
+          <li class="footer__social__listitem"><a href="">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer__credit"></div>
+    </footer>
+
+    <div id="header__navbar--mobile">
+      <div class="close-btn--mobile" onclick="hideMobileNavbar()">
+        <i class="ti-close"></i>
+      </div>
+      <div class="navbar__logo--mobile">
+        <a href="index.html"
+          ><img
+            src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/630c37df-ea06-45dc-8682-942af66355cc/nestspace+logo+bk.png?format=1500w"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="navbar__list--container">
+        <ul class="navbar__list--mobile">
+          <li class="navbar__listitem--mobile">
+            <a href="">About</a>
+          </li>
+          <li class="navbar__listitem--mobile">
+            <a href="">Contact</a>
+          </li>
+          <li class="navbar__listitem--mobile">
+            <a href="">Portfolio</a>
+          </li>
+          <li class="navbar__listitem--mobile">
+            <a href="">Impression</a>
+          </li>
+          <li class="navbar__listitem--mobile">
+            <div class="header__login--mobile">
+              <div id="login__btn--container">
+                <a href="login.html" class="login__btn">Log In</a>
+              </div>
+              <div id="welcome-back" class="hidden">
+                <span id="welcome-back-text"></span>
+                <span id="logout-btn" onclick="signOut()">Sign out</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="header__social--mobile">
+        <ul class="header__social__list">
+          <li class="header__social__listitem">
+            <a href=""><i class="ti-facebook"></i></a>
+          </li>
+          <li class="header__social__listitem">
+            <a href=""><i class="ti-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="bootstrap/js/jquery-3.6.0.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
